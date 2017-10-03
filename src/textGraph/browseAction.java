@@ -3,6 +3,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileNameExtensionFilter;
+//lab3 change1.2
 public class browseAction implements ActionListener{
 	public void actionPerformed(ActionEvent event) {
 		if(event.getSource().equals(TextGraph.browseFile)) {
