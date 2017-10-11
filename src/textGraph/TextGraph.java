@@ -2,9 +2,12 @@ package textGraph;
 import javax.swing.*;
 import java.awt.*;
 import textGraph.browseAction;
+//lab3 change 2.2
 import textGraph.allFunction;
 //lab3 change1.1
-//lab3 change 2.3
+
+//lab3 change 2.3 and 2.1
+
 class TextGraph{
 	private JFrame mainFrame;
 	private JLabel appName;
