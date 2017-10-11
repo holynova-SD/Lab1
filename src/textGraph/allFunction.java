@@ -7,6 +7,7 @@ import javax.swing.JOptionPane;
 import java.util.*;
 import textGraph.Graph;
 import textGraph.mediumWindow;
+//lab3 change 2.1
 public class allFunction implements ActionListener {
 	Graph originalGraph;
 	

@@ -4,6 +4,7 @@ import java.awt.*;
 import textGraph.browseAction;
 import textGraph.allFunction;
 //lab3 change1.1
+//lab3 change 2.1
 class TextGraph{
 	private JFrame mainFrame;
 	private JLabel appName;
