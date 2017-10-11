@@ -13,7 +13,7 @@ import java.util.Timer;
 //lab3 chang 2.2
 import java.util.TimerTask;
 //Lab3 change1.3
-
+//lab3 change 2.3
 import textGraph.GraphViz;
 public class features implements ActionListener {
 	/**colors stores the names of color that can be used as the color of nodes and edges.*/
