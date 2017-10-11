@@ -6,6 +6,7 @@ import java.io.FileReader;
 import javax.swing.JOptionPane;
 import java.util.*;
 import textGraph.Graph;
+//lab3 chengs 2.2
 import textGraph.mediumWindow;
 public class allFunction implements ActionListener {
 	Graph originalGraph;
