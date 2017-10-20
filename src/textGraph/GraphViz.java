@@ -1,4 +1,4 @@
-package textgraph;
+package textGraph;
 
 import java.io.BufferedReader;
 import java.io.DataInputStream;

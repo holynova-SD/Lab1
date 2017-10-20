@@ -1,4 +1,4 @@
-package textgraph;
+package textGraph;
 
 import java.awt.Color;
 import java.awt.Container;

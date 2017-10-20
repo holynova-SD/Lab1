@@ -1,4 +1,4 @@
-package textgraph;
+package textGraph;
 
 import java.awt.Container;
 import java.awt.event.ItemEvent;
@@ -11,8 +11,8 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.WindowConstants;
 
-import textgraph.Features;
-import textgraph.Graph;
+import textGraph.Features;
+import textGraph.Graph;
 
 class MediumWindow {
   /** graph is the Graph we got just now. */

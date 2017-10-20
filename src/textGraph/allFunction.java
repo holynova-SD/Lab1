@@ -1,4 +1,4 @@
-package textgraph;
+package textGraph;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -9,8 +9,8 @@ import java.util.Set;
 
 import javax.swing.JOptionPane;
 
-import textgraph.Graph;
-import textgraph.MediumWindow;
+import textGraph.Graph;
+import textGraph.MediumWindow;
 
 public class AllFunction implements ActionListener {
   Graph originalGraph;

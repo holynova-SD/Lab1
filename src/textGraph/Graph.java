@@ -1,4 +1,4 @@
-package textgraph;
+package textGraph;
 
 import java.util.ArrayList;
 import java.util.HashMap;
