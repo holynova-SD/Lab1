@@ -1,10 +1,15 @@
 package textGraph;
-import javax.swing.*;
-import java.awt.*;
-import textGraph.browseAction;
-import textGraph.allFunction;
-//lab3 change1.1
 
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.EventQueue;
+import java.awt.Font;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.WindowConstants;
 
 //lab3 partner change 1.2 and 1.1
 class TextGraph{
@@ -96,5 +101,4 @@ class TextGraph{
 		container.add(createGraph);
 		
 	}
-	
 }
