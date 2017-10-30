@@ -87,17 +87,17 @@ class TextGraph{
 		
 		browseFile = new JButton("Select...");
 		browseFile.setBounds(810, 300, 150, 30);
-		browseFile.addActionListener(new browseAction());
+		browseFile.addActionListener(new BrowseAction());
 		container.add(browseFile);
 		
 		browseTarget = new JButton("Select...");
 		browseTarget.setBounds(810, 360, 150, 30);
-		browseTarget.addActionListener(new browseAction());
+		browseTarget.addActionListener(new BrowseAction());
 		container.add(browseTarget);
 		
 		createGraph = new JButton("Create Graph");
 		createGraph.setBounds(400, 435, 200, 50);
-		createGraph.addActionListener(new allFunction());
+		createGraph.addActionListener(new AllFunction());
 		container.add(createGraph);
 		
 	}

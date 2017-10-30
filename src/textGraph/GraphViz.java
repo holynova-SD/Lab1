@@ -58,7 +58,7 @@ public class GraphViz {
   /**
    * Where is your dot program located? It will be called externally.
    */
-  private static String theDOT = "dot";
+  private static String theDOT = "/usr/local/bin/dot";
 
   /**
    * The image size in dpi. 96 dpi is normal size. Higher values are 10% higher each. Lower values

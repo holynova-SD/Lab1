@@ -339,6 +339,7 @@ public class Features implements ActionListener {
     public JLabel picture;
     public JTextArea pathsShowing;
     public JScrollPane jsp;
+    public JScrollPane picscrollPane;
     public String oneLinePaths;
 
     public ShowPathPicture(Graph graph, String name, String word) {
@@ -367,28 +368,36 @@ public class Features implements ActionListener {
         jsp = new JScrollPane(pathsShowing);
         jsp.setBounds(600, 0, 600, 800);
         microWindow.getContentPane().add(jsp);
+        
+        picscrollPane = new JScrollPane();
+        picscrollPane.setBounds(0, 0, 600, 780);
+        microWindow.getContentPane().add(picscrollPane);
 
         picture = new JLabel();
-        picture.setSize(600, 770);
-        microWindow.getContentPane().add(picture);
+        
+        picscrollPane.setViewportView(picture);
+        //microWindow.getContentPane().add(picture);
         ImageIcon icon = new ImageIcon(name);
-
-        int imgWidth = icon.getIconWidth();
-        int imgHeight = icon.getIconHeight();
-        int conWidth = picture.getWidth();
-        int conHeight = picture.getHeight();
-        int reImgWidth;
-        int reImgHeight;
-        if (((double) imgWidth / imgHeight) > ((double) conWidth / conHeight)) {
-          reImgWidth = conWidth;
-          reImgHeight = imgHeight * conWidth / imgWidth;
-        } else {
-          reImgHeight = conHeight;
-          reImgWidth = imgWidth * conHeight / imgHeight;
-        }
-        Image img = icon.getImage();
-        img = img.getScaledInstance(reImgWidth, reImgHeight, Image.SCALE_DEFAULT);
-        icon.setImage(img);
+        
+     // if you want to watch a full picture in the small window, then uncomment annotated rows.
+//        picture.setSize(600, 770);
+//        int imgWidth = icon.getIconWidth();
+//        int imgHeight = icon.getIconHeight();
+//        int conWidth = picture.getWidth();
+//        int conHeight = picture.getHeight();
+//        int reImgWidth;
+//        int reImgHeight;
+//        if (((double) imgWidth / imgHeight) > ((double) conWidth / conHeight)) {
+//          reImgWidth = conWidth;
+//          reImgHeight = imgHeight * conWidth / imgWidth;
+//        } else {
+//          reImgHeight = conHeight;
+//          reImgWidth = imgWidth * conHeight / imgHeight;
+//        }
+//        Image img = icon.getImage();
+//        img = img.getScaledInstance(reImgWidth, reImgHeight, Image.SCALE_DEFAULT);
+//        icon.setImage(img);
+        
         picture.setIcon(icon);
         picture.setHorizontalAlignment(SwingConstants.CENTER);
       }
@@ -416,28 +425,36 @@ public class Features implements ActionListener {
         jsp = new JScrollPane(pathsShowing);
         jsp.setBounds(600, 0, 600, 800);
         microWindow.getContentPane().add(jsp);
+        
+        picscrollPane = new JScrollPane();
+        picscrollPane.setBounds(0, 0, 600, 780);
+        microWindow.getContentPane().add(picscrollPane);
 
         picture = new JLabel();
-        picture.setSize(600, 770);
-        microWindow.getContentPane().add(picture);
+        
+        picscrollPane.setViewportView(picture);
+        //microWindow.getContentPane().add(picture);
         ImageIcon icon = new ImageIcon(name);
-
-        int imgWidth = icon.getIconWidth();
-        int imgHeight = icon.getIconHeight();
-        int conWidth = picture.getWidth();
-        int conHeight = picture.getHeight();
-        int reImgWidth;
-        int reImgHeight;
-        if (((double) imgWidth / imgHeight) > ((double) conWidth / conHeight)) {
-          reImgWidth = conWidth;
-          reImgHeight = imgHeight * conWidth / imgWidth;
-        } else {
-          reImgHeight = conHeight;
-          reImgWidth = imgWidth * conHeight / imgHeight;
-        }
-        Image img = icon.getImage();
-        img = img.getScaledInstance(reImgWidth, reImgHeight, Image.SCALE_DEFAULT);
-        icon.setImage(img);
+        
+     // if you want to watch a full picture in the small window, then uncomment annotated rows.
+//        picture.setSize(600, 770);
+//        int imgWidth = icon.getIconWidth();
+//        int imgHeight = icon.getIconHeight();
+//        int conWidth = picture.getWidth();
+//        int conHeight = picture.getHeight();
+//        int reImgWidth;
+//        int reImgHeight;
+//        if (((double) imgWidth / imgHeight) > ((double) conWidth / conHeight)) {
+//          reImgWidth = conWidth;
+//          reImgHeight = imgHeight * conWidth / imgWidth;
+//        } else {
+//          reImgHeight = conHeight;
+//          reImgWidth = imgWidth * conHeight / imgHeight;
+//        }
+//        Image img = icon.getImage();
+//        img = img.getScaledInstance(reImgWidth, reImgHeight, Image.SCALE_DEFAULT);
+//        icon.setImage(img);
+        
         picture.setIcon(icon);
         picture.setHorizontalAlignment(SwingConstants.CENTER);
       }
@@ -601,26 +618,28 @@ public class Features implements ActionListener {
       showPicture.getContentPane().add(picscrollPane);
 
       JLabel label = new JLabel();
-      label.setSize(570, 970);
+      
       picscrollPane.setViewportView(label);
       ImageIcon icon = new ImageIcon(fullName);
-
-      int imgWidth = icon.getIconWidth();
-      int imgHeight = icon.getIconHeight();
-      int conWidth = label.getWidth();
-      int conHeight = label.getHeight();
-      int reImgWidth;
-      int reImgHeight;
-      if (((double) imgWidth / imgHeight) > ((double) conWidth / conHeight)) {
-        reImgWidth = conWidth;
-        reImgHeight = imgHeight * conWidth / imgWidth;
-      } else {
-        reImgHeight = conHeight;
-        reImgWidth = imgWidth * conHeight / imgHeight;
-      }
-      Image img = icon.getImage();
-      img = img.getScaledInstance(reImgWidth, reImgHeight, Image.SCALE_DEFAULT);
-      icon.setImage(img);
+      // if you want to watch a full picture in the small window, then uncomment annotated rows.
+//      label.setSize(570, 970);
+//      int imgWidth = icon.getIconWidth();
+//      int imgHeight = icon.getIconHeight();
+//      int conWidth = label.getWidth();
+//      int conHeight = label.getHeight();
+//      int reImgWidth;
+//      int reImgHeight;
+//      if (((double) imgWidth / imgHeight) > ((double) conWidth / conHeight)) {
+//        reImgWidth = conWidth;
+//        reImgHeight = imgHeight * conWidth / imgWidth;
+//      } else {
+//        reImgHeight = conHeight;
+//        reImgWidth = imgWidth * conHeight / imgHeight;
+//      }
+//      Image img = icon.getImage();
+//      img = img.getScaledInstance(reImgWidth, reImgHeight, Image.SCALE_DEFAULT);
+//      icon.setImage(img);
+      
       label.setIcon(icon);
       label.setHorizontalAlignment(SwingConstants.CENTER);
     } else {
