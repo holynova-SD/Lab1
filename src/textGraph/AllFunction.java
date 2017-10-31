@@ -111,7 +111,7 @@ public class AllFunction implements ActionListener {
       }
       fr.close();
     } catch (Exception e1) {
-      JOptionPane.showMessageDialog(null, "Unkonwn Errors锛�");
+      JOptionPane.showMessageDialog(null, "Unkonwn Errors!");
     }
     /*
      * Create a graph
