@@ -23,7 +23,7 @@ public class Graph {
    * @param input_n number of nodes in the graph
    */
   /**.
-   * @param inputn ÊäÈë
+   * @param inputn ï¿½ï¿½ï¿½ï¿½
    */
   public Graph(int inputn) {
     n0 = inputn;
