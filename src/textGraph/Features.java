@@ -46,11 +46,13 @@ public class Features implements ActionListener {
       "springgreen", "turquoise", "violet", "wheat", "yellow", "yellowgreen" };
   /** id is the node id used in function randomWalk .*/
   int id;
+  /** MAX_SIZE is the maximal size of the graph*/
+  public static final Integer MAX_SIZE = 10000;
   /**
    * visited is a two-dimensional integer list to record which edges have been visited in function
    * calcShortestPath and randomWalk
    */
-  int[][] visited = new int[MediumWindow.graph.n0][MediumWindow.graph.n0];
+  int[][] visited = new int[MAX_SIZE][MAX_SIZE];
   /** SS is the current string used in function randomWalk .*/
   String doubles;
 
@@ -658,12 +660,14 @@ public class Features implements ActionListener {
       output = "No bridge word from " + word1 + " to " + word2 + "!";
     } else if (bridgeList.size() == 1) {
       output = "The bridge word from " + word1 + " to " + word2 + " is: "
-          + g.getName(bridgeList.get(0));
+          + g.getName(bridgeList.get(0)) + ".";
     } else {
-      output = "The bridge words from " + word1 + " to " + word2 + " are: ";
+      output = "The bridge words from " + word1 + " to " + word2 + " are:";
       for (int i = 0; i < bridgeList.size(); i++) {
-        if (i != bridgeList.size() - 1) {
+        if (i < bridgeList.size() - 2) {
           output += " " + g.getName(bridgeList.get(i)) + ",";
+        } else if(i == (bridgeList.size() - 2)) {
+        	  output += " " + g.getName(bridgeList.get(i));
         } else {
           output += " and " + g.getName(bridgeList.get(i)) + ".";
         }
