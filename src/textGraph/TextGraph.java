@@ -12,12 +12,8 @@ import javax.swing.JTextField;
 import javax.swing.WindowConstants;
 
 //lab3 partner change 1.2 and 1.1
-class TextGraph{
+public class TextGraph{
 	private JFrame mainFrame;
-	private JLabel appName;
-	private JLabel label1;
-	private JLabel label2;
-	private JLabel about;
 	public static JTextField fileLocation;
 	public static JTextField targetLocation;
 	public static JButton browseFile;
@@ -58,21 +54,21 @@ class TextGraph{
 		mainFrame.setResizable(false);
 		container.setLayout(null);
 		
-		appName = new JLabel("T-G Convertor", JLabel.CENTER);
+		JLabel appName = new JLabel("T-G Convertor", JLabel.CENTER);
 		appName.setFont(new   java.awt.Font("Apple Chancery", Font.ITALIC, 96));
 		appName.setForeground(Color.orange);
 		appName.setBounds(50, 20, 900, 240);
 		container.add(appName);
 		
-		label1 = new JLabel("Please enter or choose the path of the file:");
+		JLabel label1 = new JLabel("Please enter or choose the path of the file:");
 		label1.setBounds(50, 270, 750, 30);
 		container.add(label1);
 		
-		label2 = new JLabel("Please enter or choose the path you want to save some generated files:");
+		JLabel label2 = new JLabel("Please enter or choose the path you want to save some generated files:");
 		label2.setBounds(50, 330, 750, 30);
 		container.add(label2);
 		
-		about = new JLabel("Developed by Holynova-SD and Dimitriwhy. Version 1.0.0 By 2017-09-12", JLabel.CENTER);
+		JLabel about = new JLabel("Developed by Holynova-SD and Dimitriwhy. Version 1.0.0 By 2017-09-12", JLabel.CENTER);
 		about.setFont(new   java.awt.Font("Time New Roman", 1, 8));
 		about.setBounds(50, 530, 900, 30);
 		container.add(about);
@@ -97,7 +93,7 @@ class TextGraph{
 		
 		createGraph = new JButton("Create Graph");
 		createGraph.setBounds(400, 435, 200, 50);
-		createGraph.addActionListener(new AllFunction());
+		createGraph.addActionListener(new GenGraphController());
 		container.add(createGraph);
 		
 	}

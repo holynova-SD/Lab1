@@ -23,3 +23,16 @@
 /TestQBW.class
 /TestGBW.class
 /TestGNT.class
+/GenGraphController.class
+/AllOperations.class
+/OperationController.class
+/InWords.class
+/InWords$QueryWordB.class
+/NewText.class
+/NewText$WriteText.class
+/ShortestPath.class
+/ShortestPath$QueryWordS.class
+/WalkText.class
+/WalkText$TextGenerating$MyTask.class
+/WalkText$TextGenerating.class
+/ShowPathPicture.class

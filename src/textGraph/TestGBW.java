@@ -13,8 +13,8 @@ public class TestGBW {
 	private ArrayList<Integer> expected;
 	@Before
 	public void setUp() {
-		AllFunction allFunction_test = new AllFunction();
-		g = allFunction_test.createDriectedGraph("/Users/apple/holynovalf/Trash/test2.txt");
+		AllOperations operableGraph = new AllOperations();
+		g = operableGraph.createDriectedGraph("/Users/apple/holynovalf/Trash/test2.txt");
 		expected = new ArrayList<Integer>();
 	}
 

@@ -13,15 +13,14 @@ import org.junit.runners.Parameterized.Parameters;
 
 @RunWith(Parameterized.class)
 public class TestQBW {
-	private Features features_test;
+	private AllOperations operableGraph;
 	private Graph g;
 	String lword, rword;
 	String expected;
 	@Before
 	public void setUp() {
-		features_test = new Features();
-		AllFunction allFunction_test = new AllFunction();
-		g = allFunction_test.createDriectedGraph("/Users/apple/holynovalf/Trash/test2.txt");
+		operableGraph = new AllOperations();
+		g = operableGraph.createDriectedGraph("/Users/apple/holynovalf/Trash/test2.txt");
 	}
 	@Parameters
 	public static List<String[]> prepareData() {
@@ -40,7 +39,7 @@ public class TestQBW {
 	
 	@Test
 	public void testQBW() {
-		assertEquals("Not Equal!", expected, features_test.queryBridgeWords(g, lword, rword));
+		assertEquals("Not Equal!", expected, operableGraph.queryBridgeWords(g, lword, rword));
 	}
 
 }
